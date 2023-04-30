@@ -1,0 +1,61 @@
+.CG_Everything {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.CG_PopUp {
+    background-color: #fff;
+    border-radius: 6px;
+    width: 35%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.CG_PopUp label {
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 1.2rem;
+}
+
+.CG_PopUp h3 {
+    padding: 1rem;
+}
+
+.CG_PopUp label:first-of-type input {
+    position: relative;
+    left: 7%;
+    border-radius: 28px;
+    border-color: rgba(0, 0, 0, 0.1);
+    height: 2.125rem;
+    width: 60%;
+    text-indent: 6%;
+    font-size: 15px;
+}
+
+.CG_PopUp label:last-of-type input {
+    border: none;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    margin-left: 1.7rem;
+    cursor: pointer;
+}
+
+.CG_PopUp label:last-of-type {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+
