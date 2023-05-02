@@ -56,6 +56,32 @@
     align-items: center;
 }
 
+.CG_PopUp button:last-of-type {
+    width: fit-content;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 11px;
+    font-size: larger;
+    font-family: 'Roboto' monospace;
+    position: relative;
+    left: 75%;
+    top: 2.5%;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
 
-
-
+.CG_PopUp button:first-of-type {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: 66%;
+    bottom: 65%;
+    border: none;
+    padding: 0.5rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 100%;
+    cursor: pointer;
+}
+ 
