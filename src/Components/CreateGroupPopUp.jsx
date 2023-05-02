@@ -10,7 +10,7 @@ export default function CreateGroupPopUp(props) {
   return (
     <div className="CG_Everything">
     <div className='CG_PopUp'>
-        <button onClick={()=>props.setExited(false)}>X</button>
+        <button onClick={()=>props.setSelected(false)}>X</button>
         <h3>Create New Notes Group</h3>
         <label htmlFor="GroupName">
         Group Name: <input type="text" name='GroupName' id='GroupName' placeholder='Enter your group name....' value={chosenName}
@@ -44,8 +44,6 @@ export default function CreateGroupPopUp(props) {
             if(chosenName == '' || chosenColor == '')
             alert("Please choose a name or a color!") //TODO: Implement a better UI
             else {
-            localStorage.setItem("Group Name", chosenName)
-            localStorage.setItem("Group Color", chosenColor)
             props.Implement(chosenName, chosenColor)
             props.setSelected(false)
         }
