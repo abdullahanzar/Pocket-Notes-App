@@ -1,9 +1,18 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './ViewNotes.css'
 import DefaultImage from './assets/DefaultImage.png'
+import Navbar from './ViewNotesComponents/Navbar'
 
-export default function ViewNotes() {
+export default function ViewNotes(props) {
+  const [changeView, setChangeView] = useState(false)
+  useEffect(()=>{
+    setChangeView(props.changeViewNotes)
+  }, [props.changeViewNotes])
   return (
+    (changeView) ?
+    <div className='CustomView'>
+      <Navbar name={props.changeViewNotes}/>
+    </div> :
     <div className='DefaultView'>
         <img src={DefaultImage} alt="Pocket Notes"/>
         <p>Pocket Notes</p>
@@ -11,3 +20,10 @@ export default function ViewNotes() {
     </div>
   )
 }
+
+
+function handleViewNotesChange(GroupName) {
+  
+}
+
+export { handleViewNotesChange }

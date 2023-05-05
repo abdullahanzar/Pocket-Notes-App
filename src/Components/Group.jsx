@@ -1,10 +1,24 @@
 import React, {useState, useEffect} from 'react'
+import {handleViewNotesChange} from './ViewNotes'
 
 export default function Group(props) {
-    let [GroupName, setGroupName] = useState("")
+    let [GroupShort, setGroupShort] = useState("")
+    let [GroupName, setGroupName] = useState(`${props.children}`)
+    let [Selected, setSelected] = useState({display: 'flex',
+    flexDirection: 'row',
+    padding: '1rem',
+    fontSize: "1rem",
+    fontFamily: 'Roboto',
+    alignItems: "center",
+    fontWeight: 'bold',
+    position: 'relative',
+    left: '5%',
+    cursor: 'pointer', 
+    background: "#F7ECDC",
+    borderRadius: " 32px 0px 0px 32px"})
     useEffect(()=>{
         if(props.children!='') 
-            setGroupName(()=>(
+            setGroupShort(()=>(
                 props.children.substring(0, 2).toUpperCase()
             ))
     }, [])
@@ -18,7 +32,8 @@ export default function Group(props) {
         fontWeight: 'bold',
         position: 'relative',
         left: '5%',
-        cursor: 'pointer'
+        cursor: 'pointer', 
+        background: "inherit"
     }
     let buttonStyle = {
         width: '3rem',
@@ -32,9 +47,13 @@ export default function Group(props) {
         textAlign: 'center',
         cursor: 'pointer'
     }
+    const ChangeViewNotes = () => {
+        props.setSelectedGroupName(`${props.children}`)
+        props.setChangeViewNotes(GroupName)
+    }
   return (
-    <div style={groupStyle}>
-        <button style={buttonStyle}>{GroupName}</button>
+    <div style={(props.isSelected)? Selected : groupStyle} onClick={ChangeViewNotes}>
+        <button style={buttonStyle}>{GroupShort}</button>
         <span>&nbsp;&nbsp;&nbsp;</span>
         {props.children}
     </div>
