@@ -23,7 +23,6 @@ export default function Pane(props) {
   
   return (
     <div className='Pane'>
-        {console.log(allGroups)}
         <h1>Pocket Notes</h1>
         <button onClick={CreateGroup} className='P_CreateNotes'><span style={{fontWeight: 'bold', fontSize: '1.5rem'}}>+</span> &nbsp;&nbsp; Create Notes Group</button>
         <div className='Groups'>

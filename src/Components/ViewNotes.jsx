@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import './ViewNotes.css'
 import DefaultImage from './assets/DefaultImage.png'
 import Navbar from './ViewNotesComponents/Navbar'
+import Notes from './ViewNotesComponents/Notes'
 
 export default function ViewNotes(props) {
   const [changeView, setChangeView] = useState(false)
@@ -12,6 +13,7 @@ export default function ViewNotes(props) {
     (changeView) ?
     <div className='CustomView'>
       <Navbar name={props.changeViewNotes}/>
+      <Notes name={props.changeViewNotes}/>
     </div> :
     <div className='DefaultView'>
         <img src={DefaultImage} alt="Pocket Notes"/>
