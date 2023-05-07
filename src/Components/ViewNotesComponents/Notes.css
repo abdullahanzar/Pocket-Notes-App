@@ -1,13 +1,17 @@
 .showNotes {
   width: 100%;
-  height: 80vh;
+  height: 65vh;
   max-height: 81vh;
   background: #f7ecdc;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 .textpane {
   position: relative;
-  bottom: 8rem;
+  bottom: 0rem;
   width: 100%;
   height: 13rem;
   background: #e8e8e8;
@@ -33,4 +37,29 @@
     position: absolute;
     top: 9rem;
     right: 4rem;
+}
+
+.noteStamp {
+  position: relative;
+  font-size: 1.2rem;
+}
+
+.individualNotes {
+  margin: 1rem;
+  margin-top: 0.1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.individualNotes span:first-of-type {
+  margin: 1rem;
+  display: inline-block;
+  width: 5rem;
+}
+
+.individualNotes span:last-of-type {
+  margin: 1rem;
+  display: inline-block;
+  width: 55rem;
 }

@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react'
 import './CreateGroupPopUp.css'
-import Group from './Group'
+
 
 export default function CreateGroupPopUp(props) {
     const colors = ["#B38BFA", "#FF79F2", "#43E6FC", "#F19576", "#0047FF", "#6691FF"]
