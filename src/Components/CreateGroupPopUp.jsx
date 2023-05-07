@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react'
 import './CreateGroupPopUp.css'
-
+import ReactModal from 'react-modal'
 
 export default function CreateGroupPopUp(props) {
     const colors = ["#B38BFA", "#FF79F2", "#43E6FC", "#F19576", "#0047FF", "#6691FF"]
@@ -8,8 +8,7 @@ export default function CreateGroupPopUp(props) {
     const [chosenName, setChosenName] = useState("")
     const [disabled, setDisabled] =useState(false)
   return (
-    <div className="CG_Everything">
-    <div className='CG_PopUp'>
+    <ReactModal isOpen={props.isSelected} contentLabel='CreateGroupPopup' className='CG_PopUp'>
         <button onClick={()=>props.setSelected(false)}>X</button>
         <h3>Create New Notes Group</h3>
         <label htmlFor="GroupName">
@@ -48,7 +47,6 @@ export default function CreateGroupPopUp(props) {
             props.setSelected(false)
         }
         }}>Create</button>
-    </div>
-    </div>
+    </ReactModal>
   )
 }

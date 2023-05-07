@@ -70,6 +70,8 @@ export default function Navbar(props) {
         const newObj = {...Groups}
             delete newObj[props.name]
             setGroups(newObj)
+        localStorage.removeItem(`${props.name}`)
+        localStorage.removeItem(`${props.name}-time`)    
     }
 
     const modalButtonStyle = {

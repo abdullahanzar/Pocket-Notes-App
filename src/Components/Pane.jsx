@@ -33,7 +33,7 @@ export default function Pane(props) {
             )
           )
         }        
-        {isCreateGroupSelected && <CreateGroupPopUp setSelected={setIsCreateGroupSelected} Implement={ImplementGroup}/>}   
+        {isCreateGroupSelected && <CreateGroupPopUp setSelected={setIsCreateGroupSelected} isSelected={isCreateGroupSelected} Implement={ImplementGroup}/>}   
         </div>
     </div>
   )

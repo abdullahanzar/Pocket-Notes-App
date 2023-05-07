@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import Pane from './Components/Pane'
 import ViewNotes from './Components/ViewNotes'
 import './App.css'

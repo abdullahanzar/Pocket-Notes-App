@@ -1,6 +1,7 @@
 import React, {useContext, useEffect, useState} from 'react'
 import './Notes.css'
 import { NotesAppContext } from '../NotesAppContext'
+import SubmitButton from '../ViewNotesComponents/SubmitButton.png'
 
 export default function Notes(props) {
     const [currentNotes, setCurrentNotes] = useState("")
@@ -56,7 +57,9 @@ export default function Notes(props) {
             <textarea className='inputArea' placeholder='Enter your text here. You can either click the arrow button or press shift+alt to submit.' autoFocus={true} value={currentNotes} onChange={(e)=>{setCurrentNotes(e.target.value)}}
             onKeyDown={(e)=>{if(e.shiftKey && e.altKey)
                             registerNotes()}}></textarea>
-            <button type="submit" onClick={registerNotes}>Submit</button>
+            <button type="submit" onClick={registerNotes}>
+                <img src={SubmitButton} alt="Submit" />
+            </button>
         </div>
     </div>
   )

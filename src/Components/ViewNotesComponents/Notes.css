@@ -63,3 +63,9 @@
   display: inline-block;
   width: 55rem;
 }
+
+.textpane button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
