@@ -2,6 +2,7 @@
   width: 100%;
   height: 70dvh;
   background-color: #f7ecdc;
+  overflow: scroll;
 }
 
 .textInputArea {
@@ -17,4 +18,26 @@
   inset: 0.8rem;
   border-radius: 6px;
   padding: 0.5rem;
+}
+
+.textInputArea button {
+  border: none;
+  background: none;
+  position: absolute;
+  bottom: 2%;
+  right: 4%;
+}
+
+.NF_timefield {
+  width: 22%;
+}
+
+.NF_notefield {
+  max-width: 75%;
+}
+
+.NF_individualNoteNode {
+  display: flex;
+  flex-direction: row;
+  padding: 0.8rem;
 }
