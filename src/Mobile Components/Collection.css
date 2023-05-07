@@ -1,0 +1,18 @@
+.Collection {
+    padding: 1rem;
+    position: relative;
+    width: 20rem;
+    max-width: 21rem;
+}
+
+.Collection button {
+    border-radius: 100%;
+    padding: 1rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.Collection span {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}

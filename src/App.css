@@ -3,3 +3,7 @@
     flex-direction: row;
 }
 
+.PocketNotesAppMobileView {
+    width: 100%;
+    height: 100dvh;
+}

@@ -1,0 +1,54 @@
+.PopUpMobileCreateGroup {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(204, 204, 204);
+    background: rgb(255, 255, 255);
+    overflow: auto;
+    border-radius: 4px;
+    outline: none;
+    padding: 20px;
+}
+
+.PopUpMobileCreateGroup h3 {
+    font-family: Roboto;
+    font-size: 1.05rem;
+    padding: 0.5rem;
+}
+
+.PopUpMobileCreateGroup h4 {
+    font-family: Roboto;
+    padding: 0.5rem;
+}
+
+.PopUpMobileCreateGroup input {
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+}
+
+.PopUpMobileCreateGroup button {
+    padding: 0.9rem;
+    margin: 0.2rem;
+    border-radius: 100%;
+    border: none;
+}
+
+.PopUp_colors {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.PopUpCreate {
+    background: #000;
+    color: #fff;
+    position: relative;
+    left: 12%;
+    width: 70%
+}
+
+.PopUpMobileCreateGroup p {
+    font-size: 0.9rem;
+    padding: 0.1rem;
+}

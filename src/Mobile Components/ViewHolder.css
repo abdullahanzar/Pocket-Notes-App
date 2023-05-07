@@ -1,0 +1,36 @@
+.ViewHolder {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: hidden;    
+}
+
+.ViewHolder button {
+    padding: 1rem 2rem;
+    border: none;
+    background-color: black;
+    color: #fff;
+    font-family: Roboto;
+    width: 90%;
+    border-radius: 37.3178px;
+    font-size: 1rem;
+}
+
+.ViewHolder h1 {
+    font-family: Roboto;
+    position: relative;
+    transform: translate(-35%);
+    padding: 1rem;
+}
+
+.ViewHolder button:active {
+    background-color: #fffdd3a4;
+    color: black;
+}
+
+.collectionContainer {
+    overflow-y: scroll;
+}

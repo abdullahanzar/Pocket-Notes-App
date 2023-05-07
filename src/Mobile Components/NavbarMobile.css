@@ -1,0 +1,13 @@
+.NavbarMobile {
+    width: 100%;
+    height: 4rem;
+    background-color: #E8E8E8;
+}
+
+.NavbarMobile button {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 100%;
+    border: none;
+    background-color: antiquewhite;
+}
