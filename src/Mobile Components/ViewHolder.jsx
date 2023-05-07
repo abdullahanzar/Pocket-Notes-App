@@ -18,6 +18,7 @@ export default function ViewHolder() {
         setMountViewHolder(false)
         else
         setMountViewHolder(true)
+        console.log(mountViewHolder)
     }, [changeViewNotes])
   return (
     <>{
@@ -29,7 +30,6 @@ export default function ViewHolder() {
         }}><span style={{fontWeight: 'bold', fontSize: '1.5rem'}}>+</span>&nbsp;&nbsp;Create Notes App</button>
         {isCreateGroupSelected && <PopUpMobile show={isCreateGroupSelected} setShow={setIsCreateGroupSelected}/>}
         <div className="collectionContainer">
-            <Collection name="Cuvette" color="blue" />
             {showGroups && Object.values(allGroups).map((item, key)=>(<Collection name={`${item.name}`} 
             color={`${item.color}`} key={key}/>))}
         </div>

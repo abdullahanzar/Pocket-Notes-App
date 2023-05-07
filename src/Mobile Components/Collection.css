@@ -1,5 +1,6 @@
 .Collection {
     padding: 1rem;
+    padding-bottom: 0.01rem;
     position: relative;
     width: 20rem;
     max-width: 21rem;
@@ -7,12 +8,18 @@
 
 .Collection button {
     border-radius: 100%;
-    padding: 1rem;
-    width: fit-content;
-    height: fit-content;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .Collection span {
     font-size: 1.5rem;
     padding-left: 1rem;
+    position: relative;
+    bottom: 3rem;
+    left: 4rem;
 }

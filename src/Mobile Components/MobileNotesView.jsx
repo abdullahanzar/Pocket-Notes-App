@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { NotesAppContext } from '../Components/NotesAppContext'
 import NotesView from './NotesView'
+import Navbar from '../Components/ViewNotesComponents/Navbar'
 
 export default function MobileNotesView() {
     const [mountMobileNotesView, setmountMobileNotesView] = useState(false)
@@ -8,6 +9,8 @@ export default function MobileNotesView() {
     useEffect(()=>{
         if(changeViewNotes!=""&&changeViewNotes!=null)
         setmountMobileNotesView(true)
+        else
+        setmountMobileNotesView(false)
     }, [changeViewNotes])
   return (
     <>

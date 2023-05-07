@@ -1,0 +1,20 @@
+.NoteField {
+  width: 100%;
+  height: 70dvh;
+  background-color: #f7ecdc;
+}
+
+.textInputArea {
+  width: 100%;
+  background: #e8e8e8;
+  height: 21dvh;
+}
+
+.textInputAreaMobile {
+  width: 90%;
+  height: 16dvh;
+  position: relative;
+  inset: 0.8rem;
+  border-radius: 6px;
+  padding: 0.5rem;
+}

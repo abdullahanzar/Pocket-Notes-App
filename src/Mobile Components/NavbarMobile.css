@@ -2,12 +2,30 @@
     width: 100%;
     height: 4rem;
     background-color: #E8E8E8;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .NavbarMobile button {
     font-size: 1.5rem;
-    padding: 0.5rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 100%;
     border: none;
     background-color: antiquewhite;
+    position: relative;
+    left: 3rem;
+    color: #fff;
+}
+
+.NavbarMobile img {
+    position: relative;
+    left: 1.5rem;    
+}
+
+.NavbarMobile span {
+    position: relative;
+    left: 4rem;
+    font-size: 1.5rem;
 }
